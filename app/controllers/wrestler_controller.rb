@@ -1,3 +1,3 @@
-class WrestlerController < ApplicationController
+class WrestlersController < ApplicationController
 
 end
