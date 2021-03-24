@@ -1,0 +1,3 @@
+class WrestlerController < ApplicationController
+
+end
