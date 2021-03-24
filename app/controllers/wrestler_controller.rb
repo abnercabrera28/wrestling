@@ -1,12 +1,12 @@
 class WrestlersController < ApplicationController
 
     get '/wrestlers' do
-        
-
+        @wrestlers = Wrestler.all
+        erb :index
     end
 
     get '/wrestlers/new' do
-
+        erb :new
     end
 
     post '/wrestlers' do
