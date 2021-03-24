@@ -2,6 +2,6 @@ require "./config/environment"
 
 use Rack::MethodOverride
 
-use UserController
-use WrestlerController
+use UsersController
+use WrestlersController
 run ApplicationController
