@@ -6,11 +6,12 @@ class UsersController < ApplicationController
     end
 
     post '/signup' do
+        redirect_if_logged_in
         user = User.new(params["user"])
 
         if user.save
             session["user_id"] = user.id 
-            redirect "/movies"
+            redirect "/wrestlers"
         else
             redirect "/signup"
         end
