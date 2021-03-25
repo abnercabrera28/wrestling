@@ -1,16 +1,27 @@
 class WrestlersController < ApplicationController
 
     get '/wrestlers' do
-        @wrestlers = Wrestler.all
-        erb :index
+        redirect_if_not_logged_in
+
+        @wrestlers = current_user.wrestlers
+        erb :"/wrestlers/index"
     end
 
     get '/wrestlers/new' do
-        erb :new
+        redirect_if_not_logged_in
+        erb :"/wrestlers/new"
     end
 
     post '/wrestlers' do
+        redirect_if_not_logged_in
 
+        wrestler = current_user.wrestlers.build(params[:wrestler])
+
+        if wrestler.save
+            redirect "/wrestlers/#{wrestler.id}"
+        else
+            "error dog"
+        end
     end
 
     get '/wrestlers/:id' do
