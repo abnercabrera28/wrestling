@@ -26,15 +26,25 @@ class WrestlersController < ApplicationController
 
     get '/wrestlers/:id' do
         redirect_if_not_logged_in
+        redirect_if_not_authorized
         erb :"/wrestlers/show"
     end
 
     get '/wrestlers/:id/edit' do
-
+        redirect_if_not_logged_in
+        redirect_if_not_authorized
+        erb: "/wrestlers/edit"
     end
 
     patch '/wrestlers/:id' do
+        redirect_if_not_logged_in
+        redirect_if_not_authorized
 
+        if @wrestler.update(params["wrestler"])
+            redirect "/wrestlers/#{@wrestler.id}"
+        else
+            redirect "/movies/#{wrestler.id}/edit"
+        end
     end
 
     delete '/wrestlers/:id' do
