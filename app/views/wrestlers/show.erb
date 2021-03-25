@@ -1,6 +1,14 @@
-<%= @wrestler.name %>
+<h1><%= @wrestler.name %></h1>
 
-<form action="/wresters/<%= @wrestler.id %>" method="POST">
+<ul>
+    <li>Born <%= @wrestler.birthdate %></li>
+    <li>Hails from <%= @wrestler.hails_from %></li>
+    <li>Belt(s) Held: <%= @wrestler.belt %></li>
+    <li>Special Move(s): <%= @wrestler.special_move %></li>
+</ul>
+
+
+<form action="/wrestlers/<%= @wrestler.id %>" method="POST">
     <input type="hidden" name="_method" value="delete">
     <input type="submit" value="Delete Wrestler">
 </form>
