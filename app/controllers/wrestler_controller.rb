@@ -25,7 +25,8 @@ class WrestlersController < ApplicationController
     end
 
     get '/wrestlers/:id' do
-
+        redirect_if_not_logged_in
+        erb :"/wrestlers/show"
     end
 
     get '/wrestlers/:id/edit' do
