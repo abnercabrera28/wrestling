@@ -7,6 +7,10 @@ class ApplicationController < Sinatra::Base
         set :session_secret, ENV['SESSION_SECRET']
     end
 
+    get '/' do
+        redirect_if_not_logged_in
+    end
+
     helpers do 
         def current_user
             @current_user ||= User.find_by_id(session["user_id"])
