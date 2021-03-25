@@ -1,0 +1,5 @@
+<form action="/wresters/<%= @wrestler.id %>" method="POST">
+    <input type="hidden" name="_method" value="patch">
+    <input type="text" name="wrestler[name]" value="<%= @wrestler.name %>"><br>
+    <input type="submit" value="Edit Wrestler">
+</form>
