@@ -1,0 +1,9 @@
+<%= yield %>
+
+<% if logged_in? %>
+<br><br>
+<form action="/logout" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Logout">
+</form>
+<% end %>
