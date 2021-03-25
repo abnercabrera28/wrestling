@@ -43,7 +43,7 @@ class WrestlersController < ApplicationController
         if @wrestler.update(params["wrestler"])
             redirect "/wrestlers/#{@wrestler.id}"
         else
-            redirect "/movies/#{wrestler.id}/edit"
+            redirect "/wrestlers/#{@wrestler.id}/edit"
         end
     end
 
