@@ -41,4 +41,13 @@ class WrestlersController < ApplicationController
 
     end
 
+    private
+
+    def redirect_if_not_authorized
+        @wrestler = Wrestler.find_by_id(params[:id])
+        if @wrestler.user_id != session["user_id"]
+            redirect "/wrestlers"
+        end
+    end
+
 end
