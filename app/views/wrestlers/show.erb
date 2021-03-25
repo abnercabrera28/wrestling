@@ -1,0 +1,6 @@
+<%= @wrestler.name %>
+
+<form action="/wresters/<%= @wrestler.id %>" method="POST">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete Movie">
+</form>
