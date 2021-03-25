@@ -1,3 +1,9 @@
+<ul>
 <% @wrestlers.each do |wrestler| %>
-    <%= wrestler.name %>
+    <li>
+        <a href="/wrestlers/<%= wrestler.id %>">
+        <%= wrestler.name %>
+        </a>
+    </li>
     <% end %>
+</ul>
