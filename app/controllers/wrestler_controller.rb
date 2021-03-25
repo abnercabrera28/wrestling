@@ -33,7 +33,7 @@ class WrestlersController < ApplicationController
     get '/wrestlers/:id/edit' do
         redirect_if_not_logged_in
         redirect_if_not_authorized
-        erb: "/wrestlers/edit"
+        erb :"/wrestlers/edit"
     end
 
     patch '/wrestlers/:id' do
