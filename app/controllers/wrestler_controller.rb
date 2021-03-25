@@ -48,7 +48,12 @@ class WrestlersController < ApplicationController
     end
 
     delete '/wrestlers/:id' do
+        redirect_if_not_logged_in
+        redirect_if_not_authorized
 
+        @wrestler.destroy
+
+        redirect "/wrestlers"
     end
 
     private
