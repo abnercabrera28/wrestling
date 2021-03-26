@@ -20,6 +20,7 @@ class WrestlersController < ApplicationController
         if wrestler.save
             redirect "/wrestlers/#{wrestler.id}"
         else
+            redirect "/wrestlers/new"
             "error dog"
         end
     end
