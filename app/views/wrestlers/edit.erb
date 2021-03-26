@@ -1,5 +1,9 @@
 <form action="/wrestlers/<%= @wrestler.id %>" method="POST">
     <input type="hidden" name="_method" value="patch">
-    <input type="text" name="wrestler[name]" value="<%= @wrestler.name %>"><br>
+    <input type="text" name="wrestler[name]" placeholder="Name" value="<%= @wrestler.name %>"><br>
+    <input type="text" name="wrestler[hails_from]" placeholder="From" value="<%= @wrestler.hails_from %>"><br>
+    <input type="text" name="wrestler[birthdate]" placeholder="Birthdate" value="<%= @wrestler.birthdate %>"><br>
+    <input type="text" name="wrestler[belt]" placeholder="Belt(s)" value="<%= @wrestler.belt %>"><br>
+    <input type="text" name="wrestler[special_move]" placeholder="Special Move(s)" value="<%= @wrestler.special_move %>"><br>
     <input type="submit" value="Edit Wrestler">
 </form>
