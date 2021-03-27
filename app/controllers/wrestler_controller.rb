@@ -20,8 +20,8 @@ class WrestlersController < ApplicationController
         if wrestler.save
             redirect "/wrestlers/#{wrestler.id}"
         else
+            flash[:error] = "#{wrestler.errors.full_messages.join(" | ")}"
             redirect "/wrestlers/new"
-            "error dog"
         end
     end
 
