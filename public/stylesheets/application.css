@@ -9,6 +9,9 @@
     font-weight: bold;
 }
 
+.nav-bar {
+    background-color: transparent;
+}
 .sub {
     text-align: center;
     color: honeydew;
@@ -116,4 +119,8 @@ a:link {
 .edit {
     text-decoration: none;
     color: honeydew;
+}
+
+.create {
+    padding-left: 20px;
 }
