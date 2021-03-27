@@ -122,11 +122,11 @@ a:link {
     color: honeydew;
 }
 
-.create {
+.create, .edits {
     padding-left: 20px;
 }
 
-.new {
+.new, .update {
     color: honeydew;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
