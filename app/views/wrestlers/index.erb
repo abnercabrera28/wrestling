@@ -1,9 +1,9 @@
-<h1>Your Favorite Wrestlers</h1>
+<h1 class="fav" >Your Favorite Wrestlers</h1>
 
-<ul>
+<ul class="list">
 <% @wrestlers.each do |wrestler| %>
     <li>
-        <a href="/wrestlers/<%= wrestler.id %>">
+        <a class="wrestle" href="/wrestlers/<%= wrestler.id %>">
         <%= wrestler.name %>
         </a>
     </li>
