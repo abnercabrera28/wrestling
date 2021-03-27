@@ -6,12 +6,19 @@ class SessionsController < ApplicationController
     end
 
     post '/login' do
+        #new_user = User.new(params[])
         user = User.find_by(username: params["user"]["username"])
+        
+        if params["user"]["username"].empty? || params["user"]["password"].empty?
+            flash[:error] = "Empty"
+            redirect "/login"
+        end
 
         if user && user.authenticate(params["user"]["password"])
             session["user_id"] = user.id
             redirect "/wrestlers"
         else
+            flash[:error] = "Incorrect Username or Password"
             redirect "/login"
         end
     end
