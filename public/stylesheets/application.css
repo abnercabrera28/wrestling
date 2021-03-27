@@ -112,3 +112,8 @@ a:link {
 .li {
     list-style-type: none;
 }
+
+.edit {
+    text-decoration: none;
+    color: honeydew;
+}
