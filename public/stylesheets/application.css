@@ -2,6 +2,13 @@
     background-color: rgb(230, 195, 195);
 }
 
+.home {
+    text-align: center;
+    font-size: 170px;
+    font-style: italic;
+    font-weight: bold;
+}
+
 h1 {
     text-align: center;
     color: honeydew;
@@ -16,3 +23,4 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
