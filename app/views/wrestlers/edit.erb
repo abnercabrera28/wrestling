@@ -3,7 +3,7 @@
     <input type="text" name="wrestler[name]" placeholder="Name" value="<%= @wrestler.name %>"><br>
     <input type="text" name="wrestler[hails_from]" placeholder="From" value="<%= @wrestler.hails_from %>"><br>
     <input type="text" name="wrestler[birthdate]" placeholder="Birthdate" value="<%= @wrestler.birthdate %>"><br>
-    <input type="text" name="wrestler[belt]" placeholder="Belt(s)" value="<%= @wrestler.belt %>"><br>
-    <input type="text" name="wrestler[special_move]" placeholder="Special Move(s)" value="<%= @wrestler.special_move %>"><br>
+    <textarea name="wrestler[belt]" placeholder="Belt(s)"><%= @wrestler.belt %></textarea><br>
+    <textarea name="wrestler[special_move]" placeholder="Special Move(s)"><%= @wrestler.special_move %></textarea><br>
     <input type="submit" value="Edit Wrestler">
 </form>
