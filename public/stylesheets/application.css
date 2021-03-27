@@ -10,7 +10,8 @@
 }
 
 .nav-bar {
-    background-color: transparent;
+    background-color: honeydew;
+    opacity: 30%;
 }
 .sub {
     text-align: center;
@@ -123,4 +124,6 @@ a:link {
 
 .create {
     padding-left: 20px;
+    
 }
+
