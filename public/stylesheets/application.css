@@ -1,4 +1,18 @@
 .error {
     background-color: rgb(230, 195, 195);
-    text: white;
+}
+
+h1 {
+    text-align: center;
+    color: honeydew;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg {
+    background-image: url(../images/joe-hernandez-OebdsI0Q4F0-unsplash.jpg);
+    background-color: grey;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
