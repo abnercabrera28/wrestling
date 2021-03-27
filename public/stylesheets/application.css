@@ -94,9 +94,18 @@ a:link {
     text-decoration: none;
 }
 
-.fav {
+.fav, .w-name {
     text-align: center;
     font-size: 90px;
     font-style: italic;
     font-weight: bold;
 }
+
+.info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: honeydew;
+    font-size: x-large;
+    text-align: center;
+    list-style-type: none;
+}
+
