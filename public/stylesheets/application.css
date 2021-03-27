@@ -124,6 +124,10 @@ a:link {
 
 .create {
     padding-left: 20px;
-    
+}
+
+.new {
+    color: honeydew;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
