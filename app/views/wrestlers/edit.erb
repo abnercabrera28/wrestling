@@ -1,9 +1,15 @@
-<form action="/wrestlers/<%= @wrestler.id %>" method="POST">
-    <input type="hidden" name="_method" value="patch">
-    <input type="text" name="wrestler[name]" placeholder="Name" value="<%= @wrestler.name %>"><br>
-    <input type="text" name="wrestler[hails_from]" placeholder="From" value="<%= @wrestler.hails_from %>"><br>
-    <input type="text" name="wrestler[birthdate]" placeholder="Birthdate" value="<%= @wrestler.birthdate %>"><br>
-    <textarea name="wrestler[belt]" placeholder="Belt(s)"><%= @wrestler.belt %></textarea><br>
-    <textarea name="wrestler[special_move]" placeholder="Special Move(s)"><%= @wrestler.special_move %></textarea><br>
-    <input type="submit" value="Edit Wrestler">
-</form>
+<div class="edits">
+
+    <h2 class="update">Update A Wrestler</h2>
+
+    <form action="/wrestlers/<%= @wrestler.id %>" method="POST">
+        <input type="hidden" name="_method" value="patch">
+        <input type="text" name="wrestler[name]" placeholder="Name" value="<%= @wrestler.name %>"><br>
+        <input type="text" name="wrestler[hails_from]" placeholder="From" value="<%= @wrestler.hails_from %>"><br>
+        <input type="text" name="wrestler[birthdate]" placeholder="Birthdate" value="<%= @wrestler.birthdate %>"><br>
+        <textarea name="wrestler[belt]" placeholder="Belt(s)"><%= @wrestler.belt %></textarea><br>
+        <textarea name="wrestler[special_move]" placeholder="Special Move(s)"><%= @wrestler.special_move %></textarea><br>
+        <input type="submit" value="Edit Wrestler">
+    </form>
+
+</div>
