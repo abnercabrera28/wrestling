@@ -30,3 +30,44 @@ h1 {
     background-size: cover;
 }
 
+.login {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: honeydew;
+    text-align: center;
+}
+
+.login h1{
+    color: rgba(107, 113, 121, 0.63);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.login input[type = "text"], .login input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgba(107, 113, 121, 0.63);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 24px;
+}   
+
+.login input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(84, 84, 170);
+    padding: 14px 40px;
+    outline: none;
+    border-radius: 24px;
+}
