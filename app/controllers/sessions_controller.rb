@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
         user = User.find_by(username: params["user"]["username"])
         
         if params["user"]["username"].empty? || params["user"]["password"].empty?
-            flash[:error] = "Empty"
+            flash[:error] = "Cannot leave fields blank"
             redirect "/login"
         end
 
