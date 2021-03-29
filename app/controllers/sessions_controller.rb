@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
     end
 
     post '/login' do
-        #new_user = User.new(params[])
         user = User.find_by(username: params["user"]["username"])
         
         if params["user"]["username"].empty? || params["user"]["password"].empty?
