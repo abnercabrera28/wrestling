@@ -3,7 +3,8 @@ class WrestlersController < ApplicationController
     get '/wrestlers' do
         redirect_if_not_logged_in
 
-        @wrestlers = current_user.wrestlers
+        @wrestlers = current_user.wrestlers.order("name")
+
         erb :"/wrestlers/index"
     end
 
